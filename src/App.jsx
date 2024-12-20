@@ -5,23 +5,26 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
+        <p>Chatbot Jeff</p>
       </header>
+      <body>
+        <div class="card">
+          <div id="header">
+            <h1>Jeff!</h1>
+          </div>
+          <div id="message-section">
+            <div class="message" id="bot"><span id="bot-response">test</span></div>
+          </div>
+          <div id="input-section">
+            <input id="input" type="text" placeholder="Schreibe Jeff" autocomplete="off" autofocus="autofocus" />
+            <button class="send" onclick="sendMessage()">
+              <div class="circle">➡️</div>
+            </button>
+          </div>
+        </div>
+
+      </body>
+
     </div>
   );
 }
